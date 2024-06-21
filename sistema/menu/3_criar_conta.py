@@ -11,4 +11,25 @@ import os
 # limpando
 os.system('cls')
 
-# entrada dos dados
+# entrando com os dados da conta
+print('-'*79)
+print('criando conta')
+print('='*79)
+
+usuario = ""
+senha = ""
+comfirmacao = ""
+
+while True:
+    usuario = str(input('Entre com o nome de usuario: '))
+    senha = str(input('Entre com a senha: '))
+    comfirmacao = str(input('Digite novamente sua senha: '))
+    
+    if senha != comfirmacao: 
+        print('Sua senha e confirmação são diferentes!')
+        continue
+    else:
+        break
+
+print(f'-'*79)
+print(f'Bem-vindo(a) {usuario}') 
