@@ -2,7 +2,7 @@
 # Turma: 0152.
 # Autor: Brendon João Campos Neves.
 # Data início: 19/06/2024.
-# Data final:
+# Data final: 28/06/2024.
 # Objetivo: Menu do sistema com a junção dos arquivos 3, 4, 5, 6, e 7.
 
 # Bibliotecas:
@@ -38,18 +38,18 @@ while True:
     print('5 - Opções de pagamento')
     print('-'*79)
     
-    time.sleep(3)
-    
     opcao = input('Digite o número da opção que deseja (0-5): ')
+    
     print('-'*79)
     if (not(opcao.isnumeric())):
         print('Opção inválida! Digite apenas números.')
         print('-'*79)
+        input('Pressione Enter para continuar...')
     else:
         opcao = int(opcao)
         if opcao == 0:
             print('Saindo do sistema...')
-            time.sleep(5)
+            time.sleep(2)
             break
         elif opcao == 1:
             pass
@@ -63,6 +63,7 @@ while True:
             pass
         else:
             print('Opção inválida! Fora do raio de 0 a 5.')
+            input('Pressione Enter para continuar...')
 
 print('.'*79)
 print('Obrigado por usar nossa loja! Volte sempre!')

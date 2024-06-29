@@ -1,15 +1,19 @@
 # Curso: desenvolvivento de sistemas
 # Turma: 0152
 # Autor : Beatriz victoria
-# Data do inicio : 19\06
-# Data final:
+# Data do inicio : 19/06/2024
+# Data final: 19/06/2024
 # Objetivo: criação do login do sistema
 
 # biblioteca do sistema
 import os
+import platform
 
 # limpando
-os.system('cls')
+if platform.system() == 'Windows':
+        os.system('cls')
+else:
+    os.system('clear')
 
 
 usuario_bd = ""
@@ -28,7 +32,7 @@ while True:
         break
 
 print(f'-'*79)
-print(f'Bem-vindo(a) {usuario_bd}')
+print(f'Bem-vindo(a) {usuario_bd}!')
 
 # fazendo o login
 while True:
@@ -41,6 +45,6 @@ while True:
          and (comfirmacao == comfirmacao_bd))):
         break
     else:
-        print('Usuário')
+        print('Algum dos seus dados estão incorretos!')
 
 print(f'Bem-vindo(a) {usuario_bd}!')
